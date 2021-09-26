@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Films</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="header__title">Films you love</h1>
+            <form action="" method="POST" class="header__form">
+                <input type="search" class="header__search" placeholder="Search..." name='searched' >
+                <select name="genre" id="genre">
+                    <option value="All" class='header__option'>All</option>
+
+                </select>
+                <select name="genre" id="sort__value" class="header__sort">
+                    <option class='header__option' disabled>Filtering</option>
+                    <option class='header__option' value="A-Z">A-Z</option>
+                    <option class='header__option' value='Z-A'>Z-A</option>
+                    <option class='header__option' value='Old-New'>Old-New</option>
+                    <option class='header__option' value='New-Old'>New-Old</option>
+                </select>
+                <button type="submit" class="header__btn">Search</button>
+            </form>
+        
+        </div>
+    </header>
+ <main class="main__section">
+    <div class="container">
+   
+        <ul class="film__list">
+            
+        </ul>
+    
+       </div>
+
+       <div class="modal">
+           <p class="modal__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas quam modi harum, corporis atque dolorem expedita autem error libero consequuntur, nesciunt, accusantium vel quis aliquam nam ex sed eligendi omnis!</p>
+       </div>
+ </main>
+    <script src="./films.js"></script>
+    <script src="./utils.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>

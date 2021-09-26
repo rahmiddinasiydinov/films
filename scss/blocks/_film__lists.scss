@@ -1,0 +1,104 @@
+.main__section{
+    padding-top: 100px;
+}
+.film{
+    &__list{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 50px;
+
+    }
+    &__item{
+        width: 345px;
+        padding:15px;
+        margin-bottom: 20px;
+        margin-right: 10px;
+        background-color: #040b17;
+        border-radius: 10px;
+    }
+    &__title{
+        font-size: 32px;
+        margin-top: 10px;
+        height: 110px;
+        margin-bottom: 15px;
+
+    }
+    &__about{
+        font-style: italic;
+        font-weight: 600;
+        word-spacing: 2px;
+        line-height: 1.5;
+    }
+
+    &__img{
+       width: 100%;
+       border-radius: 10px;
+    }
+    &__genres{
+        margin-left: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        .genres__item{
+            text-transform: capitalize;
+            font-weight: 600;
+            color:#fedabc;
+        }
+    }
+    &__time{
+        color: #eee;
+    }
+    &__btn{
+        display: block;
+        width: 50%;
+        margin: 30px auto;
+        border-radius: 10px;
+        font-size: 24px;
+        font-weight: 700;
+        color: #040b17;
+        background-color: #9cfff0;
+        padding: 15px;
+        text-align: center;
+        border:2px solid transparent;
+        animation: box__shadow 1s infinite alternate;
+        animation-timing-function: linear;
+        @keyframes box__shadow {
+            0% {box-shadow: 0 0 0 ; }
+
+            100% {box-shadow: 0 0 10px 4px #9cfff0; }
+           
+
+
+        }
+    }
+}
+
+
+//modal window
+.modal{
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+
+    background-color: rgba(0, 0, 0, .8);
+    &__text{
+        width: 50%;
+        margin: auto;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1.5;
+        word-spacing: 3px;
+        margin-top:10%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .main__section{
+        padding-top: 0;
+    }
+    
+}
