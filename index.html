@@ -13,16 +13,15 @@
             <h1 class="header__title">Films you love</h1>
             <form action="" method="POST" class="header__form">
                 <input type="search" class="header__search" placeholder="Search..." name='searched' >
-                <select name="genre" id="genre">
+                <!-- <select name="genre" id="genre">
                     <option value="All" class='header__option'>All</option>
 
-                </select>
+                </select> -->
                 <select name="genre" id="sort__value" class="header__sort">
                     <option class='header__option' disabled>Filtering</option>
-                    <option class='header__option' value="A-Z">A-Z</option>
-                    <option class='header__option' value='Z-A'>Z-A</option>
-                    <option class='header__option' value='Old-New'>Old-New</option>
-                    <option class='header__option' value='New-Old'>New-Old</option>
+                    <option class='header__option' value="movie">Movie</option>
+                    <option class='header__option' value='series'>Series</option>
+                    <option class='header__option' value='episoda'>Episode</option>
                 </select>
                 <button type="submit" class="header__btn">Search</button>
             </form>
@@ -31,16 +30,39 @@
     </header>
  <main class="main__section">
     <div class="container">
-   
+        <div class="pagination">
+            <button class="prev">prev</button>
+            <div class="page__num-list">
+                <button class="page__num-item" data-id='1'>1</button>
+                <button class="page__num-item" data-id='2'>2</button>
+                <button class="page__num-item" data-id='3'>3</button>
+            </div>
+            <button class="next">next</button>
+        </div>
         <ul class="film__list">
             
         </ul>
     
+
+        
        </div>
 
-       <div class="modal">
-           <p class="modal__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas quam modi harum, corporis atque dolorem expedita autem error libero consequuntur, nesciunt, accusantium vel quis aliquam nam ex sed eligendi omnis!</p>
-       </div>
+
+
+ 
+
+       <template id='template'>
+        <li class="film__item">
+            <img src="" alt="" class="film__img">
+            <h2 class="film__title"></h2>
+            <p class="film__about"></p>
+            <ul class="film__genres">
+            </ul>
+            <span class="film__type">Type: <span id="type"></span></span>
+            <span class="film__year">Released in : <span id="year"></span></span>
+            <!-- <button class="film__btn">Show more</button> -->
+        </li>
+       </template>
  </main>
     <script src="./films.js"></script>
     <script src="./app.js"></script>

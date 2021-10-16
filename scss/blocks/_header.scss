@@ -19,7 +19,12 @@
         font-size: 20px;
         padding:5px 10px;
         border-radius: 10px;
-        color:#040b17 ;   
+        color:#040b17 ;
+        &:focus{
+            border-color: 2px solid transparent;
+            outline: 2px solid red;
+        } 
+          
     }
     #genre{
         font-size: 20px;

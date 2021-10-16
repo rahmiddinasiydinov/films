@@ -1,12 +1,12 @@
 .main__section{
-    padding-top: 100px;
+    padding-top: 150px;
 }
 .film{
     &__list{
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        margin-top: 50px;
+        margin-top: 30px;
 
     }
     &__item{
@@ -33,6 +33,7 @@
 
     &__img{
        width: 100%;
+       height: 400px;
        border-radius: 10px;
     }
     &__genres{
@@ -45,19 +46,22 @@
             color:#fedabc;
         }
     }
-    &__time{
-        color: #eee;
-    }
+   &__type{
+       display: block;
+       font-size: 20px;
+       font-weight: 700;
+       margin-bottom: 20px;
+   }
     &__btn{
         display: block;
-        width: 50%;
+        width: 70%;
         margin: 30px auto;
         border-radius: 10px;
         font-size: 24px;
         font-weight: 700;
         color: #040b17;
         background-color: #9cfff0;
-        padding: 15px;
+        padding: 10px 15px;
         text-align: center;
         border:2px solid transparent;
         animation: box__shadow 1s infinite alternate;
