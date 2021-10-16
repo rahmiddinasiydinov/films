@@ -54,7 +54,7 @@ async function fetchMovies(search, sort,pageNum ){
     let foundArr;
     let totalPages;
     if(search !== ''){
-        let response = await fetch(`http://www.omdbapi.com/?apikey=${key}&s=${search}&type=${sort}&page=${pageNum}`);
+        let response = await fetch(`https://www.omdbapi.com/?apikey=${key}&s=${search}&type=${sort}&page=${pageNum}`);
         let data = await response.json();
         console.log(data);
         foundArr = data.Search;
